@@ -1,0 +1,36 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <com.dementor.bankdemo.ui.DementorView
+        android:id="@+id/ll_dementor_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <com.dementor.bankdemo.ui.StateView
+            android:id="@+id/descriptionView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.dementor.bankdemo.ui.InputView
+            android:id="@+id/inputView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.dementor.bankdemo.ui.DementorView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/dementor_logo" />
+
+</LinearLayout>

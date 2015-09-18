@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">그래픽인증 은행용</string>
+    <string name="security_lv">보안단계설정</string>
+    
+</resources>
