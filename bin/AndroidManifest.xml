@@ -10,11 +10,13 @@
 
     <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
     <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <application
         android:allowBackup="true"
         android:configChanges="keyboardHidden|orientation|screenSize"
-        android:icon="@drawable/icon120"
+        android:icon="@drawable/icon_china"
         android:label="@string/app_name"
         android:largeHeap="true"
         android:theme="@android:style/Theme.Translucent.NoTitleBar" >
@@ -23,18 +25,13 @@
             android:configChanges="keyboardHidden|orientation|screenSize|layoutDirection|screenLayout"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Black" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name="com.dementor.bankdemo.IntroActivity"
             android:configChanges="keyboardHidden|orientation|screenSize|layoutDirection|screenLayout"
             android:screenOrientation="portrait" >
             <intent-filter>
-                <action android:name="android.intent.action.CREATE_SHORTCUT" />
+                <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
@@ -51,6 +48,11 @@
         </activity>
         <activity
             android:name="com.dementor.bankdemo.LoginSubActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|layoutDirection|screenLayout"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.dementor.bankdemo.MovieActivity"
             android:configChanges="keyboardHidden|orientation|screenSize|layoutDirection|screenLayout"
             android:screenOrientation="portrait" >
         </activity>

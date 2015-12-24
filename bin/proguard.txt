@@ -1,17 +1,20 @@
-# view AndroidManifest.xml #generated:32
+# view AndroidManifest.xml #generated:29
 -keep class com.dementor.bankdemo.IntroActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:21
+# view AndroidManifest.xml #generated:23
 -keep class com.dementor.bankdemo.LauncherActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:47
+# view AndroidManifest.xml #generated:44
 -keep class com.dementor.bankdemo.LoginActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:52
+# view AndroidManifest.xml #generated:49
 -keep class com.dementor.bankdemo.LoginSubActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:42
+# view AndroidManifest.xml #generated:39
 -keep class com.dementor.bankdemo.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:54
+-keep class com.dementor.bankdemo.MovieActivity { <init>(...); }
 
 # view res/layout/main.xml #generated:9
 -keep class com.dementor.bankdemo.ui.DementorView { <init>(...); }

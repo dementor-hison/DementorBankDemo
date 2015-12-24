@@ -66,7 +66,7 @@ public class DementorAuthController implements InputView.OnInputListener {
 	
 	@Override
 	public void onInput(int moveIndex, int hitIndex) {
-		Log.d("DEMENTOR - ", "moveIndex - " + moveIndex + ", hitIndex - " + hitIndex + " , mLockIndex : " + mLockIndex);
+		Log.d("DEMENTOR - ", "moveIndex - " + moveIndex + ", hitIndex - " + hitIndex);
 		
 		Vibrator vib = (Vibrator) mContext.getSystemService(Context.VIBRATOR_SERVICE);
 		vib.vibrate(200);
@@ -74,13 +74,6 @@ public class DementorAuthController implements InputView.OnInputListener {
 		if(mLockIndex == -1)
 			mLockIndex = hitIndex;
 
-		// Failed
-		if(hitIndex > 100){
-			reset();
-			mListener.onInputResult(false);
-			return;
-		}
-		
 		// Failed
 		if(mLockIndex != hitIndex){
 			reset();

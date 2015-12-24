@@ -5,7 +5,8 @@
 
     <GridView
         android:id="@+id/gridView"
-        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:gravity="center"
         android:listSelector="@android:color/transparent" >
@@ -13,55 +14,8 @@
 
     <ImageView
         android:id="@+id/moveIcon"
-        android:layout_width="wrap_content" android:layout_height="wrap_content"
-        android:visibility="invisible" />
-    
-    <GridView
-        android:id="@+id/gridViewMini"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:gravity="center"
-        android:listSelector="@android:color/transparent">
+        android:visibility="invisible" />
 
-    </GridView>
-    
-    <LinearLayout 
-        android:id="@+id/llGridController"
-        android:orientation="vertical"
-        android:layout_width="match_parent" android:layout_height="match_parent"
-        android:visibility="gone">
-        <LinearLayout 
-	        android:orientation="horizontal"
-	        android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
-            <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
-            <ImageButton android:id="@+id/ibArrowUp" 
-	            android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.76"
-	            android:background="@drawable/arrow_top_selector" />
-            <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
-        </LinearLayout>
-        <LinearLayout 
-	        android:orientation="horizontal"
-	        android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.9">
-            <ImageButton android:id="@+id/ibArrowLeft" 
-	            android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" 
-	            android:background="@drawable/arrow_left_selector" />
-            <ImageButton android:id="@+id/ibArrowOK" 
-	            android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" 
-	            android:background="@drawable/enter_selector" />
-            <ImageButton android:id="@+id/ibArrowRight" 
-	            android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" 
-	            android:background="@drawable/arrow_right_selector" />
-        </LinearLayout>
-        <LinearLayout 
-	        android:orientation="horizontal"
-	        android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
-            <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
-            <ImageButton android:id="@+id/ibArrowDown" 
-	            android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.76"
-	            android:background="@drawable/arrow_down_selector"/>
-            <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
-        </LinearLayout>
-    </LinearLayout>
-    
 </FrameLayout>

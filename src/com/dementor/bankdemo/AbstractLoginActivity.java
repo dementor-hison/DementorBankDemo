@@ -11,7 +11,7 @@ public abstract class AbstractLoginActivity extends Activity {
 		overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
 		
 		setContentView(R.layout.login);
-		initLayout(); 
+		initLayout();
 	}
 	
 	protected abstract void initLayout();

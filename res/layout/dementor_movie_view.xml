@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#aa000000" >
+
+    <!--
+    <View
+        android:id="@+id/dummyViewTop"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="216" />
+    -->
+    <!--
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="324" >
+    -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/tvMovieTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:text="[Sample AD]"
+            android:textStyle="bold"
+            android:layout_marginBottom="3dp"/>
+
+        <SurfaceView
+            android:id="@+id/surface"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <Button
+            android:id="@+id/btMovieSkip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="영상SKIP" 
+            android:layout_marginTop="3dp"/>
+    </LinearLayout>
+
+    <!--
+    <View
+        android:id="@+id/dummyViewButtom"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="459" />
+    -->
+
+</FrameLayout>

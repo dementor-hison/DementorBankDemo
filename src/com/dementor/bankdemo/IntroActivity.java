@@ -20,8 +20,9 @@ public class IntroActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		Log.i("DEMENTOR - ", "IntroActivity - onCreate()");
 		
-		final Intent intent = getIntent();
-		int position = intent.getIntExtra("position", 0);
+		final Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+		intent.putExtra("position", 13);
+		int position = 13;
 		
 		mBgBitmap = BitmapFactory.decodeResource(getResources(), Const.BANK_INTRO[position]);
 		
@@ -35,9 +36,8 @@ public class IntroActivity extends Activity {
 			@Override
 			public void run() {
 				
-				intent.setClass(IntroActivity.this, MainActivity.class);
 				startActivity(intent);
-				
+				Log.e("Dementor", "StartActivity");
 				new Handler().postDelayed(new Runnable() {
 					@Override
 					public void run() {
